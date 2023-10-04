@@ -1,0 +1,135 @@
+body {
+    background: #eee;
+}
+
+#side_nav {
+    background: #000;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#welcome {
+    color: #135E98;
+    font-family: MuseoModerno;
+    font-size: 60px;
+    margin-top: 95;
+    width: min-content;
+    text-align: end;
+    margin-top: 95px;
+    margin-left: 55px;
+}
+
+#login {
+    margin-left: 55px;
+    margin-top: 95px;
+}
+
+#loginMahasiswa {
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    width: 700px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 32.5px;
+    background: #135E98;
+}
+
+#loginAdmin {
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    width: 700px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 32.5px;
+    background: #E3BC26;
+}
+
+.background-index {
+    height: 100vh;
+}
+
+.background-item {
+    z-index: 1;
+    bottom: 1024px;
+    position: relative;
+}
+
+.disable-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-image {
+
+    height: 100vh;
+    width: 100%;
+
+}
+
+#form {
+    margin-top: 87px;
+    margin-left: 37px;
+}
+
+
+#submit {
+    font-family: Arial;
+    font-weight: bold;
+    width: 120px;
+    border: none;
+    margin-top: 40px;
+    background-color: #135E98;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #135E98;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #135E98;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#input {
+    border-radius: 14px;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+div.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div.line {
+    width: calc(1.414 * 200px);
+    transform: rotate(45deg);
+    transform-origin: top left;
+    border-top: 1px solid blue;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    box-sizing: border-box;
+}
