@@ -9,6 +9,7 @@ class User extends Model
 {
     use HasFactory;
     protected $table = 'users';
+    protected $primaryKey = 'NIM';
 
     protected $fillable = [
         'NIM',

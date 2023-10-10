@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,3 +39,6 @@ Route::get('/kelolaTaMahasiswa/listTa1Mahasiswa/DetailTugasAkhir', [AdminControl
 Route::get('/kelolaTaMahasiswa/listTa2Mahasiswa', [AdminController::class, 'listTa2Mahasiswa'])->name('listTa2Mahasiswa');
 Route::get('/kelolaPengajuanKP', [AdminController::class, 'kelolaPengajuanKP'])->name('kelolaPengajuanKP');
 Route::get('/listDataKpMahasiswa', [AdminController::class, 'listDataKpMahasiswa'])->name('listDataKpMahasiswa');
+
+Route::post('authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
