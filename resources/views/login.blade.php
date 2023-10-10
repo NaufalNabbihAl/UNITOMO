@@ -25,7 +25,8 @@
                         </div>
                     </div>
                     <div class="col text-end">
-                        <button type="submit" class="btn btn-primary rounded-pill" id="submit">LOGIN</button>
+                        <a href="{{ route('dashboard') }}" type="submit" class="btn btn-primary rounded-pill"
+                            id="submit">LOGIN</a>
                     </div>
                 </div>
             </form>

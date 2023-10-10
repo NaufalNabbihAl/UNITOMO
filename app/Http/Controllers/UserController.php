@@ -19,7 +19,45 @@ class UserController extends Controller
     {
         return view('login');
     }
+    public function dashboard()
+    {
+        return view('user/dashboard');
+    }
 
+    public function pengajuanTugasAkhir()
+    {
+        return view('user/pengajuanTugasAkhir');
+    }
+
+    public function ajukanTugasAkhir()
+    {
+        return view('user/ajukanTugasAkhir');
+    }
+
+    public function proposalTugasAkhir()
+    {
+        return view('user/proposalTugasAkhir');
+    }
+    public function hasilTugasAkhir()
+    {
+        return view('user/hasilTugasAkhir');
+    }
+    public function pengajuanKerjaPraktik()
+    {
+        return view('user/pengajuanKerjaPraktik');
+    }
+    public function pendataanKerjaPraktik()
+    {
+        return view('user/pendataanKerjaPraktik');
+    }
+    public function notification()
+    {
+        return view('user/notification');
+    }
+    public function helpCenter()
+    {
+        return view('user/helpCenter');
+    }
     /**
      * Show the form for creating a new resource.
      */
