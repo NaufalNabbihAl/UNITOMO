@@ -3,13 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenteicatable;
 
-class User extends Model
+class User extends Authenteicatable
 {
     use HasFactory;
-    protected $table = 'users';
-    protected $primaryKey = 'NIM';
 
     protected $fillable = [
         'NIM',
@@ -17,5 +15,12 @@ class User extends Model
         'email',
         'password',
     ];
+
+    protected $hidden = [
+        'password',
+    ];
+
+    protected $table = 'users';
     public $timestamps = false;
+    protected $primaryKey = 'NIM';
 }
