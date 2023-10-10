@@ -10,18 +10,18 @@
 }
 
 .sidebar {
-    background-color: #1F8DE3;
+    background-color: #1f8de3;
     width: 260px;
     padding: 24px;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    transition: all ease-in .2s;
+    transition: all ease-in 0.2s;
 }
 
 .sidebar.hide {
     width: 150px;
-    transition: all ease-out .2s;
+    transition: all ease-out 0.2s;
 }
 
 .main-content {
@@ -94,8 +94,6 @@
     color: white;
 }
 
-
-
 .sidebar .main .list-item .icon {
     margin-right: 24px;
 }
@@ -105,7 +103,7 @@
     flex-direction: row;
     align-items: center;
     padding: 12px 10px;
-    background-color: #1A478A;
+    background-color: #1a478a;
     border-radius: 8px;
     width: 212px;
     box-sizing: border-box;
@@ -124,13 +122,13 @@
 }
 
 .sidebar.hide .main .list-item .icon span:hover {
-    color: #E3BC26;
-    transition: all ease-in .1s;
+    color: #e3bc26;
+    transition: all ease-in 0.1s;
 }
 
 .sidebar .main .list-item span:hover {
-    color: #E3BC26;
-    transition: all ease-in .1s;
+    color: #e3bc26;
+    transition: all ease-in 0.1s;
 }
 
 .sidebar .main .list-item {
@@ -149,7 +147,7 @@
 .item {
     width: 300px;
     height: 310px;
-    background-color: #1F8DE3;
+    background-color: #1f8de3;
     opacity: 85%;
 }
 
@@ -160,7 +158,7 @@
 }
 
 .desc {
-    font-family: 'Monomaniac One', sans-serif;
+    font-family: "Monomaniac One", sans-serif;
     font-size: 35px;
 }
 
@@ -178,26 +176,22 @@ a {
 }
 
 .mc {
-
     margin-left: 50px;
     margin-right: 50px;
 }
 
-
 .title-color {
-    color: #1A478A;
+    color: #1a478a;
     font-size: 24px;
 }
 
-
-
 .list-group-mine .list-group-item {
-    background-color: #1A478A;
+    background-color: #1a478a;
     color: white;
 }
 
 .list-group-mine .list-group-item:hover {
-    color: #E3BC26;
+    color: #e3bc26;
 }
 
 #menu-button {
@@ -226,7 +220,7 @@ a {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #1A478A;
+    background-color: #1a478a;
 }
 
 #menu-label:after,
@@ -253,34 +247,43 @@ a {
     top: 5px;
     right: 0;
     left: 0;
-    color: #1A478A;
+    color: #1a478a;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
 }
 
-#menu-checkbox:checked+#menu-label::before {
+#menu-checkbox:checked + #menu-label::before {
     left: -39px;
 }
 
-#menu-checkbox:checked+#menu-label::after {
+#menu-checkbox:checked + #menu-label::after {
     left: 39px;
 }
 
-#menu-checkbox:checked+#menu-label #hamburger::before {
+#menu-checkbox:checked + #menu-label #hamburger::before {
     animation: moveUpThenDown 0.8s ease 0.2s forwards,
         shakeUp 0.8s ease 0.2s forwards, shakeDown 0.8s ease 0.2s forwards;
 }
 
 #pengajuan {
-    color: #1A478A;
+    color: #1a478a;
 }
 
 #form {
     width: 925px;
     height: 775px;
-    background-color: #1A478A;
+    background-color: #1a478a;
     border-radius: 8px;
+}
+
+.modal-body {
+    background-color: #1a478a;
+    color: white;
+    opacity: 90%;
+}
+.modal-dialog {
+    opacity: 90%;
 }
 
 @keyframes moveUpThenDown {
@@ -321,7 +324,7 @@ a {
 
 @keyframes shakeDown {
     0% {
-        transform: rotateZ('0');
+        transform: rotateZ("0");
     }
 
     80% {
